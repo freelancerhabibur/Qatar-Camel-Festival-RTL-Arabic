@@ -1,0 +1,14 @@
+.container {
+    @include xl-devices {
+        max-width: 1260px;
+    }
+    @include xxl-devices {
+        max-width: 1560px;
+    }
+}
+
+@import 'hero';
+@import 'home-col-box';
+@import 'result-award';
+@import 'cta';
+@import 'download';

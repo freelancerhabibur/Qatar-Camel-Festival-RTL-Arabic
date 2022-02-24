@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'JannaLT-Regular';
+  src: url('JannaLT-Regular.woff2') format('woff2'),
+       url('JannaLT-Regular.woff') format('woff'),
+       url('JannaLT-Regular.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'JannaLT-Bold';
+  src: url('JannaLT-Bold.woff2') format('woff2'),
+       url('JannaLT-Bold.woff') format('woff'),
+       url('JannaLT-Bold.ttf')  format('truetype');
+}

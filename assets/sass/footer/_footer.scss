@@ -1,0 +1,154 @@
+footer {
+    .footer-top {
+        .contact-item {
+            @include lg-devices {
+                border-left: 1px solid #000;
+                padding-left: 30px;
+
+            }
+            ul {
+                li {
+                    line-height: 2;
+                    text-align: left;
+
+                    @include xl-devices {
+                        line-height: 2.5;
+                    }
+                    a {
+                        font-weight: 600;
+                        font-size: 14px;
+                        @include lg-devices {
+                            font-size: 16px;
+                        }
+                        @include xxl-devices {
+                            font-size: 18px;
+                        }
+                        img {
+                            margin-right: 8px;
+                            width: 20px;
+
+                            @include xl-devices {
+                                width: 30px;
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .partners-brand {
+            margin-top: 30px;
+            @include md-devices {
+                align-items: center;
+            }
+            .partners {
+                text-align: center;
+                a  {
+                    margin-left: 10px;
+                    
+                    @include sm-devices {
+                        margin-left: 30px;
+                    }
+                    @include md-devices {
+                        margin-left: 15px;
+                    }
+                    @include xl-devices {
+                        margin-left: 30px;
+                    }
+                    @include xxl-devices {
+                        margin-left: 50px;
+                    }
+
+                    img {
+                        width: 100px;
+                        @include md-devices {
+                            width: 70px;
+                        }
+                        @include lg-devices {
+                            width: 90px;
+                        }
+                        @include xl-devices {
+                            width: auto;
+                            max-width: 150px;
+                        }
+                        @include xxxl-devices {
+                            max-width: 200px;
+                        }
+                    }
+                }
+            }
+            .brands {
+                text-align: center;
+                margin-top: 30px;
+                @include md-devices {
+                    margin-top: 0;
+                }
+                @include lg-devices {
+                    border-right: 1px solid #000;
+                    padding-right: 30px;
+                    
+                }
+                img {
+                    width: 100px;
+                    @include md-devices {
+                        width: 70px;
+                    }
+                    @include lg-devices {
+                        width: 90px;
+                    }
+                    @include xl-devices {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+    .cener-line {
+        margin: 24px 0 0px;
+        @include md-devices {
+            margin: 35px 0 0;
+        }
+        @include xl-devices {
+            margin: 50px 0 0;
+        }
+    }
+    .footer-bottom {
+        padding: 15px 0;
+        @include md-devices {
+            padding: 20px;
+        }
+        @include xl-devices {
+            padding: 30px;
+        }
+        .menu {
+            li {
+                display: inline-block;
+
+                a {
+                    font-weight: 500;;
+                    font-size: 14px;
+                    color: #00a099;
+
+                    @include md-devices {
+                        font-size: 16px;
+                    }
+                    @include lg-devices {
+                        font-size: 18px;
+                    }
+                }
+                & + li {
+                    margin-left: 10px;
+                    @include sm-devices {
+                        margin-left: 20px;
+                    }
+                    @include md-devices {
+                        margin-left: 30px;
+                    }
+                    @include xxl-devices {
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

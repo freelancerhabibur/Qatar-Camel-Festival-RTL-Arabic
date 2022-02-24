@@ -1,0 +1,125 @@
+.home-col-box {
+    padding: 45px 0;
+    border-top: 16px solid;
+    border-bottom: 16px solid;
+    border-image: url(../images/line2.png) 100 1024 round;
+    overflow: hidden;
+
+
+    @include sm-devices {
+        padding: 60px 0;
+    }
+    @include md-devices {
+        padding: 80px 0;
+    }
+    @include xl-devices {
+        padding: 100px 0;
+        border-top: 24px solid;
+        border-bottom: 24px solid;
+        border-image: url(../images/line2.png) 100 0 round;
+    }
+    @include xxl-devices {
+        border-top: 30px solid;
+        border-bottom: 30px solid;
+    }
+
+
+    .item {
+        padding: 30px 25px;
+        box-shadow: 0 0 6px 3px rgba($color__Black, 0.05);
+        border-radius: 20px;
+        background-color: #fff;
+        max-width: 400px;
+        margin: 0 auto;
+        position: relative;
+
+        
+        @media (min-width: 410px) {
+            padding: 30px 35px;
+        }
+        @include xsm-devices {
+            padding: 40px 50px;
+        }
+        @include sm-devices {
+            padding: 40px 15px;
+        }
+        @include md-devices {
+            padding: 40px 28px;
+        }
+        @include xl-devices {
+            padding: 50px 40px;
+        }
+        @include xxl-devices {
+            padding: 50px 50px;
+            max-width: 100%;
+        }
+        @include xxxl-devices {
+            padding: 50px 80px;
+        }
+        .title {
+            margin-bottom: 20px;
+            font-size: 20px;
+            @include sm-devices {
+                font-size: 18px;
+            }
+            @include md-devices {
+                font-size: 20px;
+            }
+            @include lg-devices {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            @include xl-devices {
+                font-size: 28px;
+                margin-bottom: 40px;
+            }
+            @include xxl-devices {
+                margin-bottom: 60px;
+            }
+        }
+        ul {
+            li {
+                font-size: 15px;
+                line-height: 2.5;
+                @include xxl-devices {
+                    font-size: 16px;
+                    line-height: 2.8;
+                }
+                @include xxxl-devices {
+                    font-size: 17px;
+
+                }
+            }
+        }
+
+        .button {
+            margin-top: 20px;
+            @include lg-devices {
+                margin-top: 40px;
+            }
+            @include xl-devices {
+                margin-top: 50px;
+            }
+            @include xxl-devices {
+                margin-top: 70px;
+            }
+            @include xxxl-devices {
+                margin-top: 80px;
+            }
+        }
+        .label {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            height: 86px;
+
+            @include xl-devices {
+                left: 40px;
+                height: 100px;
+            }
+            @include xxl-devices {
+                height: 120px;
+            }
+        }
+    }
+}
